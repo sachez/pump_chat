@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="mx-auto">
+    <h1 class="text-center"> Hello Sasha! </h1>
+</div>
+<div class="row">
+    <div class="col align-self-start">
+        <div class="row" id="list">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <select id="currency">
+        </select>
+    </div>
+    <divc class="col">
+        <button class="btn btn-primary" id="add">ClickMe, Bro!</button>
+    </divcla>
+</divc>
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'main.js' %}"></script>
+{% endblock %}
